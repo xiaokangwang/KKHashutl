@@ -39,6 +39,6 @@ package main
           io.WriteString(hash, string(buf))   // append into the hash
       }
 
-      fmt.Printf("%s checksum is %x\n",file.Name(), hash.Sum(nil))
+      fmt.Printf("%s checksum is %X\n",file.Name(), hash.Sum(nil))
 
  }
